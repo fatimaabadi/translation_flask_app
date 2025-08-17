@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>English to French Translator</title>
+</head>
+<body>
+    <h1>English → French Translator</h1>
+    <form method="POST">
+        <input type="text" name="text" placeholder="Enter English text" required>
+        <input type="submit" value="Translate">
+    </form>
+    {% if translation %}
+    <h2>Translation:</h2>
+    <p>{{ translation }}</p>
+    {% endif %}
+</body>
+</html>
