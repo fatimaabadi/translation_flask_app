@@ -1,10 +1,44 @@
 # translation_flask_app
 <img width="1197" height="522" alt="image" src="https://github.com/user-attachments/assets/a1fed6a0-b6c3-45cc-8ca6-5380bcc76b12" />
 
-git clone <repo_url>
-cd <repo_folder>
+This project is a language translation web application built using a pre-trained Seq2Seq model. Users can input text in English and receive the translated output in French (or vice versa, depending on your model). The application provides a simple web interface for interaction and is fully containerized using Docker
+
+User-friendly web interface for translation.
+
+Loads a pre-trained translation model.
+
+Fully containerized with Docker for easy deployment
+
+
+
+Setup Instructions (Local via Docker)
+
+Clone the repository:
+
+git clone <your-github-repo-link>
+cd <repo-folder>
+
+
+Build the Docker image:
+
 docker build -t translation-app .
+
+
+Run the Docker container:
+
+docker run -p 5000:5000 translation-app
+
+
+Open your browser and go to http://localhost:5000 to access the app.
+
+git clone <repo_url>
+
+cd <repo_folder>
+
+docker build -t translation-app .
+
 docker run -p 10000:10000 translation-app
+
 Live Demo: https://translation-flask-app-iqn4.onrender.com
 
 The model will likely perform decently on simple, frequent phrases.
